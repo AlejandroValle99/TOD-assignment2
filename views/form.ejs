@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New</title>
+  </head>
+  <body>
+    <main>
+      <form method="POST" action="/new">
+        <label>Name:</label>
+        <input type="text" name="authorName" />
+
+        <label>Text:</label>
+        <textarea type="text" name="messageText"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

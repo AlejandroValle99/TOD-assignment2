@@ -2,10 +2,10 @@
   "name": "assignment-2",
   "version": "1.0.0",
   "description": "mini-message-board",
-  "main": "app.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --watch index.js"
   },
   "author": "Alejandro A. Valle",
   "license": "ISC",
