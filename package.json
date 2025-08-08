@@ -5,11 +5,16 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch --env-file=.env index.js"
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "engines": {
+    "node": ">=20.6.0"
   },
   "author": "Alejandro A. Valle",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.2.1",
     "ejs": "^3.1.10",
     "express": "^5.1.0"
   }

@@ -2,6 +2,8 @@ import express from "express";
 import path from "path";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+import dotenv from "dotenv";
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -44,5 +46,5 @@ app.post("/new", (req, res) => {
 });
 
 app.listen(process.env.PORT || 3000, () => {
-  console.log(`Listening on http://localhost:3000`);
+  console.log(`Listening on port ${process.env.PORT || 3000}`);
 });
