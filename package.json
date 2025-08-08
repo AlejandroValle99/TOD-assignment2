@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node --watch index.js"
+    "start": "node --watch --env-file=.env index.js"
   },
   "author": "Alejandro A. Valle",
   "license": "ISC",
